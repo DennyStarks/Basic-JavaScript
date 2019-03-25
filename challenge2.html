@@ -33,13 +33,14 @@ Add an if-else statement to your setHomeAddress() function so that when the chec
 			let billing = document.querySelector("#bill").value;
 			console.log(billing);
 			document.getElementById("home").value = billing;
-		  
+
 			if (document.querySelector("#useBilling").checked){
         document.getElementById("home").value = billing;
 				document.getElementById("home").disabled = true;
       }
       else{
         document.getElementById('home').value = "";
+				document.getElementById("home").disabled = false;
       }
   }
 
